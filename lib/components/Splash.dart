@@ -13,7 +13,9 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 2,
-      navigateAfterSeconds: MyHomePage(title: 'hello',),
+      navigateAfterSeconds: MyHomePage(
+        title: 'hello',
+      ),
       title: Text(
         '欢迎使用！',
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
@@ -22,7 +24,7 @@ class _SplashState extends State<Splash> {
         "加载中...",
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
       ),
-      image: Image.asset("assets/images/start.png", fit: BoxFit.fill),
+      image: Image.asset("lib/assets/images/start.png", fit: BoxFit.fill),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: TextStyle(),
       photoSize: 60.0,
